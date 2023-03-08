@@ -14,6 +14,25 @@ int main(){
 	int len = strlen(A);
 	printf("Length = %d\n", len);
 
-// Arrays and pointers are different types that are used in similar ways
+// 2) Arrays and pointers are different types that are used in similar ways
+
+// 3) Arrays are always passed to function by reference
+
+	char Arr[20] = "Hello";
+	print(Arr);
+
+}
+
+void print(char* C){
+	//int i = 0;
+	//while(C[i] != '\0'){
+	 while(*C != '\0'){
+		printf("%c", *C);
+		//i++;
+		C++;
+
+	}
+	printf("\n");
+
 
 }
